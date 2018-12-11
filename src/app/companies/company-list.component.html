@@ -1,0 +1,23 @@
+<div class='table-responsive'>
+  <table class='table'
+  *ngIf='companies && companies.length'>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Symbol</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor='let company of companies'>
+      <td>
+        {{company.id}}
+      </td>
+      <td> <a [routerLink]="['/companies', company.symbol]">
+        {{ company.name }}
+      </a></td>
+      <td>{{company.symbol}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Cloudera", "symbol": "CLDR"},
+  { "id": 2, "name": "Arbor Realty Group", "symbol": "ABR"},
+  { "id": 3, "name": "Apple", "symbol": "AAPL"}
+]
