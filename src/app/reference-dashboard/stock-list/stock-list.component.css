@@ -1,0 +1,18 @@
+div {
+  float:right;
+  margin: auto;
+  max-width: fit-content;
+  border-width: 2px;
+  border-color: maroon;
+  border-style: solid;
+}
+
+.rip-td {
+  border-style: solid;
+  border-color: #607D8B;
+  border-width: 1px;
+}
+
+.table-card {
+  margin: auto;
+}

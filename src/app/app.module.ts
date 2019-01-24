@@ -6,6 +6,12 @@ import { RouterModule } from '@angular/router';
 import { StockModule} from './stock/stock.module';
 
 import { AppComponent } from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatTableModule} from '@angular/material/table';
+import {MatTabsModule} from '@angular/material/tabs';
+import {ReferenceDashboardModule} from './reference-dashboard/reference-dashboard.module';
+
 
 @NgModule({
   declarations: [
@@ -13,11 +19,17 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatTableModule,
     HttpClientModule,
+    MatTabsModule,
     RouterModule.forRoot([
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
     ]),
+    ReferenceDashboardModule,
     StockModule
   ],
   bootstrap: [AppComponent]

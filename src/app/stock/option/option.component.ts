@@ -50,6 +50,11 @@ export class OptionComponent implements OnInit {
       switch (sort.active) {
         case 'symbol': return compare(a.symbol, b.symbol, isAsc);
         case 'created_at': return compare(a.created_at, b.created_at, isAsc);
+        case 'price': return compare(a.price, b.price, isAsc);
+        case 'processed_premium': return compare(a.processed_premium, b.processed_premium, isAsc);
+        case 'opening_strategy': return compare(a.opening_strategy, b.opening_strategy, isAsc);
+        case 'closing_strategy': return compare(a.closing_strategy, b.closing_strategy, isAsc);
+
 
         default: return 0;
       }

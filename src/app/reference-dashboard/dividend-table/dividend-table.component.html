@@ -1,0 +1,33 @@
+<!--<div class="row">-->
+  <!--<table #tableElement class="col-md-10">-->
+    <!--<tbody>-->
+    <!--<tr *ngFor="let dividend of dividends">-->
+      <!--<th scope="row">{{dividend.declaredDate}}</th>-->
+      <!--<th>{{dividend.exDate}}</th>-->
+      <!--<th>{{dividend.paymentDate}}</th>-->
+      <!--<th>{{dividend.recordDate}}</th>-->
+      <!--<th>{{dividend.amount}}</th>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+  <!--</table>-->
+<!--</div>-->
+
+<div *ngIf="displayDetail">
+  <table class="rip-table">
+    <th>declared date</th>
+  <tbody>
+  <tr class="rip-tr" *ngFor="let dividend of dividends">
+  <th class="rip-th" scope="row">{{dividend.declared_date}}</th>
+    <td class="rip-td">{{dividend.declared_date | date}}</td>
+    <td class="rip-td">{{dividend.ex_date | date}}</td>
+  <td class="rip-td">{{dividend.payment_date | date}}</td>
+  <td class="rip-td">{{dividend.record_date | date}}</td>
+  <td class="rip-td">{{dividend.amount}}</td>
+    <td class="rip-td">{{dividend.ex_date | date}}</td>
+    <td class="rip-td">{{dividend.payment_date | date}}</td>
+    <td class="rip-td">{{dividend.record_date | date}}</td>
+    <td class="rip-td">{{dividend.amount}}</td>
+  </tr>
+  </tbody>
+  </table>
+</div>

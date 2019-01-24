@@ -1,13 +1,73 @@
-<div class='card' *ngIf='company'>
-  <div class='card-header'>
-    {{ company.name }}
-    {{pageTitle + ':  ' + company.name}}
-  </div>
-  <div class='card-footer'>
-    <button class='btn btn-outline-secondary'
-            (click)='onBack()'
-            style='width:80px'>
-      <i class='fa fa-chevron-left'></i> Back
-    </button>
-  </div>
-</div>
+<!--<div class='card' *ngIf='company'>-->
+  <!--<div class='card-header'>-->
+    <!--{{ company.name }}-->
+    <!--{{pageTitle + ':  ' + company.name}}-->
+  <!--</div>-->
+  <!--<div class='card-footer'>-->
+    <!--<button class='btn btn-outline-secondary'-->
+            <!--(click)='onBack()'-->
+            <!--style='width:80px'>-->
+      <!--<i class='fa fa-chevron-left'></i> Back-->
+    <!--</button>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+<!--<mat-tab-group>-->
+  <!--<mat-tab label="First">-->
+    <!--<ng-template matTabContent>-->
+      <!--<div class='card' *ngIf='company'>-->
+        <!--<div class='card-header'>-->
+          <!--{{ company.name }}-->
+          <!--{{pageTitle + ':  ' + company.name}}-->
+        <!--</div>-->
+        <!--<div class='card-footer'>-->
+          <!--<button class='btn btn-outline-secondary'-->
+                  <!--(click)='onBack()'-->
+                  <!--style='width:80px'>-->
+            <!--<i class='fa fa-chevron-left'></i> Back-->
+          <!--</button>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+  <!--<mat-tab label="Second" (click)="getDividends()">-->
+    <!--<ng-template matTabContent *ngIf="dividends">-->
+      <!--Content 2 - Loaded: {{dividends}}-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+  <!--<mat-tab label="Third">-->
+    <!--<ng-template matTabContent>-->
+      <!--Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+<!--</mat-tab-group>-->
+
+
+    <!--<ng-template>-->
+      <div class='card' *ngIf='company'>
+        <div class='card-header'>
+          {{ company.name }}
+          {{pageTitle + ':  ' + company.name}}
+        </div>
+        <div class='card-footer'>
+          <button class='btn btn-outline-secondary'
+                  (click)='onBack()'
+                  style='width:80px'>
+            <i class='fa fa-chevron-left'></i> Back
+          </button>
+        </div>
+      </div>
+    <!--</ng-template>-->
+
+    <!--<ng-template>-->
+      <div class='card' *ngIf='dividends'>
+        Content 2 - Loaded: {{dividends}}
+      </div>
+    <!--</ng-template>-->
+
+
+    <!--<ng-template>-->
+      <!--Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}-->
+    <!--</ng-template>-->
+

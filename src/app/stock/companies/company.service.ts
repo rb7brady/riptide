@@ -3,6 +3,7 @@ import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable, throwError} from 'rxjs';
 import {catchError, map, tap} from 'rxjs/operators';
 import {ICompany} from './company';
+import {IDividend} from '../dividend/dividend';
 
 @Injectable({
   providedIn: 'root'
@@ -24,4 +25,5 @@ export class CompanyService {
       catchError(null)
     );
   }
+
 }

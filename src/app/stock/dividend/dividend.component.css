@@ -1,0 +1,13 @@
+div {
+  margin: auto;
+  max-width: fit-content;
+  border-width: 2px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+.rip-td {
+  border-style: solid;
+  border-color: #607D8B;
+  border-width: 1px;
+}

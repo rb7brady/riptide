@@ -1,0 +1,17 @@
+<div class='table-card'>
+  <table class="rip-table">
+    <tbody>
+    <tr class="rip-tr"*ngFor="let stock of stocks">
+      <th class="rip-th" scope="row"><button (click)="toggleDivs(stock.symbol)">{{stock.symbol}}</button></th>
+      <td class="rip-td">{{stock.id}}</td>
+      <td class="rip-td">{{stock.name}}</td>
+      <td class="rip-td">{{stock.symbol}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<pm-dividend-table class="col-md-10"
+[displayDetail]="showDivs"
+[dividends]="stockDividends">
+</pm-dividend-table>

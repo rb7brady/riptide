@@ -1,0 +1,23 @@
+div {
+  background-color: mediumblue;
+  margin: auto;
+  max-width: fit-content;
+  float: left;
+
+  border-width: 2px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+.rip-td {
+  background-color: #BBD8DC;
+  border-style: solid;
+  border-color: #607D8B;
+  border-width: 1px;
+}
+.rip-tr{
+  background-color: #BBD8DC;
+  border-style: solid;
+  border-color: #607D8B;
+  border-width: 1px;
+}
