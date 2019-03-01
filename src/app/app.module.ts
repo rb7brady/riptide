@@ -11,11 +11,13 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {ReferenceDashboardModule} from './reference-dashboard/reference-dashboard.module';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
